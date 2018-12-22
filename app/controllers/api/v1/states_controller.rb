@@ -6,7 +6,7 @@ module Api
             
             def index
                 @states = State.all
-                render json: @states
+                render(json: @states)
             end 
         end 
     end 
