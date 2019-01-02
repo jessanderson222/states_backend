@@ -9,7 +9,7 @@ module Api
             end 
 
             def create 
-                card = Card.create(user_params)
+                card = Card.create(card_params)
                 render json: card, status: 201
             end 
 
@@ -25,7 +25,7 @@ module Api
             end 
 
             def show 
-                render json: @user, status: 200 
+                render json: @card, status: 200 
             end 
 
             private 
