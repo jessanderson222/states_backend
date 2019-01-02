@@ -21,7 +21,7 @@ module Api
             def destroy
                 cardId = @card.id 
                 @card.destroy 
-                render json: {message:"Card deleted", userId:userId}
+                render json: {message:"Trip deleted"}
             end 
 
             def show 
